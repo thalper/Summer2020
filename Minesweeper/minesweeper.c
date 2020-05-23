@@ -379,7 +379,7 @@ void setPlayer(char playerGrid[][SIZE])
 
 void chooseSize()
 {
-  printf("Enter size of grid as a single integer that will\nrepresent the dimention of each side\n");
+  printf("Enter size of grid as a single integer that will\nrepresent the dimension of each side\n");
   scanf(" %d", &SIZE);
   printf("\n");
 
