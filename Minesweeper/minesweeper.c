@@ -231,14 +231,18 @@ void markSpace(char playerGrid[][SIZE], int *marked)
   chooseSpace(&x, &y);
 
   if (playerGrid[x][y] == '-')
-    {
-      playerGrid[x][y] = '#';
-      (*marked)++;
-      return;
-    }
+  {
+    playerGrid[x][y] = '#';
+    (*marked)++;
+    return;
+  }
+  else if (playerGrid[x][y] == '#')
+  {
+    playerGrid[x][y] = '-';
+    (*marked)--;
+    return;
+  }
 
-  playerGrid[x][y] = '-';
-  (*marked)--;
   return;
 }
 
